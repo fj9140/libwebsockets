@@ -14,6 +14,9 @@ then
 		sudo pip install Twisted==16.0.0
 		sudo pip install pyopenssl>=0.14
 		sudo pip install autobahntestsuite
+		wget https://libwebsockets.org/openssl-1.1.0-trusty.tar.bz2 -O/tmp/openssl.tar.bz2
+		cd /
+		sudo tar xf /tmp/openssl.tar.bz2
 	fi
 
 	if [ "$LWS_METHOD" == "libev" ];
